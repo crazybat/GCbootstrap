@@ -1,0 +1,29 @@
+	<div class="row">
+	  <div class="col-lg-12">
+		<div class="bs-component">
+		  <div class="alert alert-dismissible alert-danger">
+			<button type="button" class="close" data-dismiss="alert">×</button>
+			<p class="mb-0">If you are seeing this, congratulations! Don't forget to copy the URL:</p>			
+			<ul>
+				<li id="edit-link">
+				<script> 
+				var pathArray = window.location.pathname.split('/');
+				var i;
+				var newPath = "";
+
+
+				for (i=2; i < pathArray.length; i++)
+				{
+				newPath += (pathArray[i]);
+				newPath += "/";
+				}
+				newPath = newPath.replace(/\/$/, '');
+				
+				document.getElementById('edit-link').innerHTML = ("<a href='http://www.gcpedia.gc.ca/gcwiki/index.php?title=" + newPath + "&action=edit' class='alert-link'>http://www.gcpedia.gc.ca/gcwiki/index.php?title=" + newPath + "&action=edit</a>");
+				</script>
+				</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>

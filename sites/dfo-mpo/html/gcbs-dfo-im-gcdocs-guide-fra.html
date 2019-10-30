@@ -1,0 +1,1303 @@
+[[en:Information_management_at_Fisheries_and_Oceans_Canada_(DFO)/Information_management_initiatives/GCDocs/Guide]]
+__NOTOC__
+{{DFO-IM-gcplus-head-main}}
+{{DFO-IM-gcplus-nav-main-fra}}
+<html>
+<script>
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1&rel=0&modestbranding=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+</script>
+<div role="main" class="container-fluid">
+	<nav aria-label="breadcrumb" class="mb-2">
+	  <ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="http://www.gcpedia.gc.ca/wiki/Gestion_de_l%27information_de_P%C3%AAches_et_Oc%C3%A9ans_Canada">Gestion de l'information</a></li>
+		<li class="breadcrumb-item"><a href="http://www.gcpedia.gc.ca/wiki/Gestion_d%27information_de_P%C3%AAches_et_Oc%C3%A9ans_Canada_(MPO)/Initiatives_de_gestion_de_l%27information">Initiatives</a></li>
+		<li class="breadcrumb-item active" aria-current="page"><a href="http://www.gcpedia.gc.ca/wiki/Gestion_d%27information_de_P%C3%AAches_et_Oc%C3%A9ans_Canada_(MPO)/Initiatives_de_gestion_de_l%27information/GCDocs"><span class="text-uppercase text-dark font-weight-bold">GC</span><span class="text-success">docs</span></a></li>
+		<li class="breadcrumb-item active" aria-current="page">Guide d’assistance</li>
+	  </ol>
+	</nav>
+
+	<div class="row mt-4">
+		<div class="col-md-8">		
+			<div class="media">
+				<img class="align-self-start mr-1" src="http://www.gcpedia.gc.ca/gcwiki/images/f/fa/Gcdocs-icon-3535.png" />
+				<div class="media-body">
+					<h3><span class="text-uppercase font-weight-bold">GC</span><span class="text-success">docs</span> Guide d’assistance</h3>
+				</div>
+			</div>
+			
+			<img src="http://www.gcpedia.gc.ca/gcwiki/images/7/77/Logo-graphic.png" width="150" alt="" class="img-thumbnail img-fluid float-left mr-2">
+			<div class="lead">
+				<p>Ce guide permettra de répondre aux questions que vous pourriez avoir en tant que nouvel utilisateur de GCdocs.</p>
+			</div>
+		</div>
+	
+		<div class="col-md-4">
+			<div class="card card-accent-danger shadow">
+				<div class="card-header">
+					<h5>Expiration du mot de passe?</h5>
+				</div>
+				<div class="card-body">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">
+					  <i class="fab fa-youtube"></i> Visionner la vidéo :<br/> Réinitialisation du mot de passe
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-lg">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Réinitialisation du mot de passe</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="YU7CpwSBB48"></div>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<div class="row">
+      <div class="col-12">
+        <div class="bs-component">
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#intro">Introduction</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-12"><span class="badge badge-danger">Nouveau</span> Mot de passe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-01">Langue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-02">Sauvegarde</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-03">Autorisations</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-04">Partage</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-05">Mon espace de travail</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-06">Recherche</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-07">Réserve</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-08">Favoris</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-09">Mon profil</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-10">Xreference</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#a-11">Avis</a>
+            </li>
+          </ul>
+		  
+		  <!--Section - Intro -->
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade show active" id="intro">
+				<div class="row mt-4">
+					<div class="col-md-6 border-right border-dark">			
+						<h2>Bienvenue à GCdocs!</h2> 
+						<p>En tant qu'employés du gouvernement du Canada, nous sommes constamment envahis d'une masse d'information, qu'il s'agisse de courriels, de lettres, d'information destinée aux médias, de rapports, etc. </p>
+						<p>Cette information est ce qui permet à la plupart des employés de continuer à faire leur travail avec succès. 
+						En tant que fonctionnaires, il est de notre devoir de gérer l'information de manière appropriée afin qu'elle soit facilement accessible à toute personne en ayant besoin. Nos collègues, nos ministères et la population du Canada s'appuient sur les fonctionnaires pour organiser et gérer toute information de manière responsable et efficiente, de sorte qu'elle soit à leur disposition en cas de besoin.</p>
+						<p>GCdocs permet de stocker l'information créée dans un emplacement unique, sécurisé et organisé. Ce système permet aux fonctionnaires de partager l'information, de l'utiliser et d'y accéder à l'échelle de l'organisation, en s'assurant qu'elle est là pour nous faciliter la tâche. </p>
+						<p>Ce guide permettra de répondre aux questions que vous pourriez avoir en tant que nouvel utilisateur de GCdocs.</p>
+					</div>
+					<div class="col-md-6">
+						<h2>GCdocs : de quoi s'agit-il?</h2>
+						<p>GCdocs est le système officiel de gestion électronique des documents et des dossiers (SGEDD) du gouvernement du Canada. Il s'agit d'un système automatisé et bilingue de gestion de l'archivage et de l’information dont les fonctionnalités peuvent être adaptées aux besoins des organisations. GCdocs aide différentes organisations à remplir leurs obligations en matière de gestion du cycle de vie de l'information.</p>
+						<p>Cet outil les aide à créer, collecter et protéger les données dans un environnement électronique, ainsi qu'à partager, organiser, évaluer, identifier et éliminer facilement les données. Tout en favorisant la collaboration de groupe, il offre un contrôle d’accès sécurisé par l'intermédiaire de la gestion des droits d'utilisateurs et de groupe.</p>
+						<p>GCdocs soutient aussi le flux d'information ouverte de l'Initiative pour un gouvernement ouvert du gouvernement du Canada. Il est positionné stratégiquement pour aborder les défis soulevés par la gestion efficace des ressources publiques en plus d'offrir une occasion de résoudre les problèmes relatifs à l'augmentation de l'intégrité publique et à l'amélioration des services publics.</p>
+					</div>
+				</div>
+				
+            </div>
+			
+			<!--Section - Language -->
+            <div class="tab-pane fade" id="a-01">
+				<h2 class="text-center mt-3">Changer la langue</h2>
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+						<h3>Pour mettre la page d'ouverture de session en anglais</h3>
+                        <ol><li>Sélectionnez <strong>English (Canada)</strong> au bas de la page d’ouverture de session.</li></ol>
+					</div>
+					<div class="col-md-8">
+						<div class="card">
+						  <div class="card-heading" id="headingLanguage">
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseLanguage" aria-expanded="false" aria-controls="collapseLanguage">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+						  </div>
+						  <div id="collapseLanguage" class="collapse" aria-labelledby="headingLanguage">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="341ndtQK7Gs"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>				
+					</div>
+				</div>
+				
+				<hr class="pt-1" />			  
+				
+				<div class="row">					
+					<div class="col-md-4 border-right border-dark">
+						<h3>Pour changer la langue dans GCdocs</h3>
+						<ol>
+							<li>Dans la barre de menus, cliquez sur <strong>Outils</strong>.</li>
+							<li>Dans le menu déroulant, cliquez sur <strong>Paramètres</strong>.</li>
+							<li>Vous serez redirigés vers l'onglet Général de  Mes paramètres généraux.</li>
+							<li>Sur le côté droit, cliquez sur <strong>Langue</strong>.
+								<ol type="a">
+									<li>Cliquez sur Français ou sur Anglais.</li>
+									<li>Cela changera la langue du système.</li></ol>
+							</li>
+							
+							
+							<li>Sur le côté droit, cliquez sur <strong>Langue des métadonnées</strong>.
+							<ol type="a">
+									<li>Cliquez sur <strong>Français</strong> ou sur <strong>Anglais</strong>. </li>
+									<li>Cela affichera le nom des dossiers et des documents en anglais, si un nom en anglais a été entré pour le document ou pour le dossier à l'aide des paramètres multilingues.</li></ol>
+							</li>
+						</ol>
+					</div>
+							
+					<div class="col-md-8">
+						<div class="card">
+						  <div class="card-heading" id="headingLanguage2">
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseLanguage02" aria-expanded="false" aria-controls="collapseLanguage02">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+						  </div>
+						  <div id="collapseLanguage02" class="collapse" aria-labelledby="headingLanguage02">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="GLeUdUXPP8w"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<hr class="pt-1" />
+			</div>
+			
+			
+			<!--Section - Saving Documents -->
+            <div class="tab-pane fade" id="a-02">
+				<h2 class="text-center mt-3">Sauvegarder des documents</h2>
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+						<h3>Pour enregistrer un nouveau document directement dans un dossier</h3>
+						<ol>
+						
+							<li>Créez un nouveau document dans Microsoft Office (Word, Excel, PowerPoint, etc.).</li>
+							<li>À partir de la barre supérieure <strong>Office</strong> sélectionnez <strong>Enterprise Connect > Enregistrer sous</strong>.</li>
+							<li>Parcourez l'arborescence du répertoire et sélectionnez le dossier dans lequel vous souhaitez enregistrer le document.</li>
+							<li>Inscrivez le nom du document dans le champ <strong>Nom</strong>. Cliquez sur <strong>Enregistrer</strong>.</li>
+
+						
+						</ol>
+					</div>
+				
+					<div class="col-md-8">
+						<div class="card">
+						  <div class="card-heading" id="headingSaving">
+							
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSaving" aria-expanded="false" aria-controls="collapseSaving">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+							
+						  </div>
+						  <div id="collapseSaving" class="collapse" aria-labelledby="headingSaving">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="vhq32cRHo6c"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				
+				<hr class="pt-1" />
+				
+				<div class="row">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Pour ajouter un élément à l'aide de la fonction glisser-déposer</h3>
+						<ol><li>Cliquez sur un élément de votre bureau et glissez-le dans la zone <strong>Glisser-déposer</strong>.</li>
+						  <li>Vous pouvez aussi le glisser et déposer à partir d'un dossier ou d'un courriel.</li></ol>
+				
+					</div>
+				
+					<div class="col-md-8">
+				
+						<div class="card">
+						  <div class="card-heading" id="headingSaving02">
+							
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSaving02" aria-expanded="false" aria-controls="collapseSaving02">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+							
+						  </div>
+						  <div id="collapseSaving02" class="collapse" aria-labelledby="headingSaving02">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="9lnejo9hwiw"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+				
+					</div>
+				</div>
+					
+				<hr class="pt-1" />
+				
+				<div class="row">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Pour ajouter une version d'un document GCdocs existant</h3>
+						<ol><li>Cliquez sur l'icône <strong>Fonctions</strong> de l'élément, puis choisissez Ajouter une version.</li>
+						  <li>Cliquez sur le bouton Parcourir, naviguez jusqu'au fichier, puis cliquez sur le bouton <strong>Ouvrir</strong>.</li>
+						  <li>Cliquez sur le bouton <strong>Ajouter une version</strong>.</li></ol>
+				  
+					</div>
+				
+					<div class="col-md-8">  
+				
+				<div class="card">
+				  <div class="card-heading" id="headingSaving03">
+					
+					  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSaving03" aria-expanded="false" aria-controls="collapseSaving03">
+						<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+					  </a>
+					
+				  </div>
+				  <div id="collapseSaving03" class="collapse" aria-labelledby="headingSaving03">
+					<div class="card-body">
+					  <div class="embed-responsive embed-responsive-16by9">
+						<div class="youtube-player" data-id="zmvv7KGAaz0"></div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+					</div>
+				</div>
+					
+				<hr class="pt-1" />
+				
+				<div class="row">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Envoyer et enregistrer</h3>
+                        <ol><li>Créez un nouveau courriel dans Microsoft Outlook.</li>
+						  <li>Cliquez sur le bouton <strong>Envoyer et enregistrer</strong>.</li>
+						  <li>Parcourez l'arborescence du répertoire et sélectionnez le dossier dans lequel vous souhaitez enregistrer le message.</li>
+						  <li>Cliquez sur <strong>Enregistrer</strong>.</li></ol>
+				  
+				  
+					</div>
+				
+					<div class="col-md-8">  
+				  
+				<div class="card">
+				  <div class="card-heading" id="headingSaving04">
+					
+					  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSaving04" aria-expanded="false" aria-controls="collapseSaving04">
+						<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+					  </a>
+					
+				  </div>
+				  <div id="collapseSaving04" class="collapse" aria-labelledby="headingSaving04">
+					<div class="card-body">
+					  <div class="embed-responsive embed-responsive-16by9">
+						<div class="youtube-player" data-id="Z1mxHTLjmW8"></div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+					</div>
+				</div>
+					
+				<hr class="pt-1" />
+				
+				<div class="row">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Pour classer un courriel à l'aide de la fonction glisser-déposer</h3>
+						<ol><li>Déployez le dossier <strong>Enterprise Connect</strong> dans Microsoft Outlook au dossier où vous souhaitez ajouter un courriel.</li>
+						  <li>Cliquez sur un élément dans votre dossier Outlook et glissez-le dans le dossier approprié de GCdocs.</li></ol>
+				  
+					</div>
+				
+					<div class="col-md-8">    
+				  
+				<div class="card">
+				  <div class="card-heading" id="headingSaving05">
+					
+					  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSaving05" aria-expanded="false" aria-controls="collapseSaving05">
+						<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+					  </a>
+					
+				  </div>
+				  <div id="collapseSaving05" class="collapse" aria-labelledby="headingSaving05">
+					<div class="card-body">
+					  <div class="embed-responsive embed-responsive-16by9">
+						<div class="youtube-player" data-id="OYIYZr61VQw"></div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+					</div>
+				</div>
+					
+				<hr class="pt-1" />
+				
+				<div class="row">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Pour ajouter un dossier dans GCdocs (autorisations  requises)</h3>
+						<ol><li>Cliquez sur le bouton <strong>Ajouter Dossier</strong>.</li>
+						  <li>Inscrivez le nom du dossier dans le champ <strong>Nom</strong>.</li>
+						  <li>Cliquez sur <strong>Ajouter</strong>.</li></ol>
+				
+					</div>
+				
+					<div class="col-md-8">    
+				
+				<div class="card">
+				  <div class="card-heading" id="headingSaving06">
+					
+					  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSaving06" aria-expanded="false" aria-controls="collapseSaving06">
+						<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+					  </a>
+					
+				  </div>
+				  <div id="collapseSaving06" class="collapse" aria-labelledby="headingSaving06">
+					<div class="card-body">
+					  <div class="embed-responsive embed-responsive-16by9">
+						<div class="youtube-player" data-id="nhZyrGgBXmY"></div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+					</div>
+				</div>
+					
+				<hr class="pt-1" />
+
+				<div class="row">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Pour ajouter un dossier de courriels dans GCdocs (autorisations requises)</h3>
+						<ol><li>Cliquez sur le bouton <strong>Ajouter un élément > Dossier des e-mails</strong>.</li>
+						  <li>Inscrivez le nom du dossier dans le champ <strong>Nom</strong>.</li>
+						  <li>Cliquez sur <strong>Ajouter</strong>.</li></ol>
+				  
+					</div>
+				
+					<div class="col-md-8">      
+				  
+				<div class="card">
+				  <div class="card-heading" id="headingSaving07">
+					
+					  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSaving07" aria-expanded="false" aria-controls="collapseSaving07">
+						<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+					  </a>
+					
+				  </div>
+				  <div id="collapseSaving07" class="collapse" aria-labelledby="headingSaving07">
+					<div class="card-body">
+					  <div class="embed-responsive embed-responsive-16by9">
+						<div class="youtube-player" data-id="dj1q6CV3Wow"></div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+					</div>
+				</div>
+					
+				<hr class="pt-1" />
+			</div>
+			
+	
+            <div class="tab-pane fade" id="a-03">
+				<h2 class="text-center mt-3">Changer les autorisations</h2>
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">				
+						<p><em>REMARQUE : Par défaut, tous les éléments ajoutés à GCdocs sont accessibles à tous les employés du MPO et de la GCC. Seulement lorsque nécessaire.</em></p>
+						<h3>Pour changer les autorisations accordées pour les éléments individuels</h3>
+						<ol><li>Cliquez sur l'icône <strong>Fonctions</strong> de l'élément, puis choisissez <strong>Autorisations</strong>.</li>
+						  <li>Sur la page <strong>Autorisations</strong>, cliquez sur le lien d'un utilisateur ou d'un groupe dans la liste <strong>Accès par défaut</strong> ou <strong>Accès assigné</strong>.</li>
+						  <li>Dans la section <strong>Modifier les autorisations</strong> pour l'utilisateur ou le groupe, modifiez les paramètres d’accès, puis cliquez sur le bouton <strong>Mettre à jour</strong>.</li>
+						  <li>Cliquez sur le bouton <strong>Terminé</strong>.</li></ol>
+						  <p><em>REMARQUE : Cela suppose que vous ayez obtenu l’autorisation d'apporter la modification.</em></p>
+					</div>
+					
+					<div class="col-md-8">      
+
+					  <div class="card">
+						<div class="card-heading" id="headingSaving">
+						  
+							<a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsePermissions" aria-expanded="false" aria-controls="collapsePermissions">
+							  <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							</a>
+						  
+						</div>
+						<div id="collapsePermissions" class="collapse" aria-labelledby="headingPermissions">
+						  <div class="card-body">
+							<div class="embed-responsive embed-responsive-16by9">
+							  <div class="youtube-player" data-id="obqTwpjJZN4"></div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				  
+					</div>
+				</div>
+					
+				<hr class="pt-1" />
+			</div>
+			
+			
+			
+			
+			<!--Section - Sharing-->   
+			<div class="tab-pane fade" id="a-04">
+				
+				<h2 class="text-center mt-3">Partager des renseignements</h2>
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">				
+				
+						<h3>Partage de documents par courriel - À partir de GCdocs</h3>
+						<ol><li>Trouvez le document dans GCdocs.</li>
+						  <li>Cochez la case à gauche du nom du fichier.</li>
+						  <li>Cliquez sur le bouton Lien E-mail.</li></ol>
+
+					</div>
+					
+					<div class="col-md-8">      
+					
+						<div class="card">
+						  <div class="card-heading" id="headingSharing">
+							
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSharing" aria-expanded="false" aria-controls="collapseSharing">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+							
+						  </div>
+						  <div id="collapseSharing" class="collapse" aria-labelledby="headingSharing">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="Z1mxHTLjmW8"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+					
+				<hr class="pt-1" />	
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+				
+						<h4>Partage de documents par courriel - À partir de Enterprise Connect</h4>
+						<ol><li>Trouvez le document dans GCdocs.</li>
+						  <li><strong>Faites un clic droit</strong> sur le fichier et sélectionnez Envoyer à</li>
+						  <li>Sélectionnez <strong>Destinataire du mail en lien</strong> ou Destinataire du mail en pièce <strong>jointe</strong>.</li></ol>
+				  
+					</div>
+					
+					<div class="col-md-8">      
+				  
+						<div class="card">
+						  <div class="card-heading" id="headingSharing02">
+							
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSharing02" aria-expanded="false" aria-controls="collapseSharing02">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+							
+						  </div>
+						  <div id="collapseSharing02" class="collapse" aria-labelledby="headingSharing02">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="4R1dX-vluTo"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+				
+					</div>
+				</div>
+					
+				<hr class="pt-1" />	
+			</div>
+				
+				
+				
+			<!--Section - My Workspace-->       
+			<div class="tab-pane fade" id="a-05">
+				<h2 class="text-center mt-3">Mon espace de travail</h2>
+				<p><strong>Mon espace de travail</strong> dans GCdocs est l’équivalent de votre lecteur personnel. C'est un espace où vous pouvez enregistrer des documents professionnels personnels, des signets dans GCdocs, ainsi que d'autres éléments qui vous sont utiles.</p> 
+				<p><em>REMARQUE : Se rapporter à la politique en matière de GI sur l'utilisation acceptable des réseaux et des dispositifs et la Norme sur le stockage de l'information électronique.</em></p>
+					
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+					
+						<h3>Pour accéder à Mon espace personnel</h3>
+						<ol><li>Sélectionnez <strong>Mon espace de travail</strong> dans le menu Personnel.</li></ol>
+					
+					</div>
+					
+					<div class="col-md-8">
+					
+						<div class="card">
+						  <div class="card-heading" id="headingMyWorkspace">
+							
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseMyWorkspace" aria-expanded="false" aria-controls="collapseMyWorkspace">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+							
+						  </div>
+						  <div id="collapseMyWorkspace" class="collapse" aria-labelledby="headingMyWorkspace">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="bwpuenHz0Kw"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				
+				<hr class="pt-1" />	
+					
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+						<h3>Pour ajouter des favoris à Mon espace personnel</h3>
+						<ol><li>Cliquez sur l'icône <strong>Fonctions</strong> de l'élément, puis choisissez <strong>Ajouter aux favoris</strong>.</li></ol>
+					
+					</div>
+					<div class="col-md-8">
+					
+						<div class="card">
+						  <div class="card-heading" id="headingMyWorkspace02">
+							
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseMyWorkspace02" aria-expanded="false" aria-controls="collapseMyWorkspace02">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+							
+						  </div>
+						  <div id="collapseMyWorkspace02" class="collapse" aria-labelledby="headingMyWorkspace02">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="dj1Xoc4aEZo"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					
+					</div>
+				</div>
+				<hr class="pt-1" />	
+				
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">				
+					
+						<h3>Pour enlever des favoris de Mon espace personnel</h3>
+						<ol><li>Cliquez sur l'icône <strong>Fonctions</strong> de l'élément, puis choisissez <strong>Enlever le favori</strong>.</li></ol>
+					
+					</div>
+					<div class="col-md-8">
+					
+						<div class="card">
+						  <div class="card-heading" id="headingMyWorkspace03">
+							
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseMyWorkspace03" aria-expanded="false" aria-controls="collapseMyWorkspace03">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+							
+						  </div>
+						  <div id="collapseMyWorkspace03" class="collapse" aria-labelledby="headingMyWorkspace03">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="lTXmOH0O030"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>		
+				<hr class="pt-1" />	
+			</div>
+			
+			
+			<!--Section - Searching-->       
+			<div class="tab-pane fade" id="a-06">
+				<h2 class="text-center mt-3">Rechercher dans GCdocs</h2>
+				<p>La case <strong>Rechercher</strong> de GCdocs est affichée sur presque toutes les pages du système. Elle permet de rechercher de l’information en fonction de l'emplacement  ou du niveau de dossier à partir duquel vous effectuez une recherche.</p>
+				<p>Exemple</p>
+				<ul><li>Une recherche dans l’espace de travail Entreprise  entraînera une recherche d'information à l'échelle de GCdocs.</li>
+				  <li>Une recherche à partir du dossier Communications se fera au niveau de ce dossier et dans tous ses sous-dossiers.  </li></ul>
+				<p>Exception</p>
+				<ul><li>Une recherche par numéro de document à l'aide de la barre de recherche  permettra de récupérer le document où que vous soyez dans la structure du dossier.</li></ul>
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">				
+
+						<h3>Pour trouver de l'information en utilisant l’outil « Recherche » de GCdocs</h3>
+						<ol>
+							<li>Entrez vos éléments de recherche dans la case <strong>Rechercher</strong>.</li>
+							<li>Cliquez sur l'icône <strong>Effectuer la recherche</strong>.</li>
+						</ol>				  
+					</div>
+					<div class="col-md-8">
+
+				<div class="card">
+					  <div class="card-heading" id="headingSearching">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSearching" aria-expanded="false" aria-controls="collapseSearching">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseSearching" class="collapse" aria-labelledby="headingSearching">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="S_lENlWxFp4"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />	
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Pour trouver de l'information en utilisant la Recherche avancée</h3>
+						<ol>
+							<li>Sélectionnez <strong>Recherche</strong> dans le menu <strong>Outils</strong>.</li>
+							<li>À la section <strong>Texte intégral</strong>, sélectionnez les options appropriées dans <strong>Recherche</strong>, <strong>Opérateur</strong> et <strong>Dans</strong>.</li>
+							<li>Entrez vos éléments de recherche dans la case <strong>Recherche</strong>.</li>
+							<li>Au besoin, choisissez des options avancées dans la section <strong>Attributs système</strong>.</li>
+							<li>Cliquez sur le bouton <strong>Rechercher</strong>.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">
+
+				<div class="card">
+					  <div class="card-heading" id="headingSearching02">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseSearching02" aria-expanded="false" aria-controls="collapseSearching02">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseSearching02" class="collapse" aria-labelledby="headingSearching02">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="ZuKUaOiVOS0"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />	
+			</div>
+			
+			<!--Section - Reserving-->       
+			<div class="tab-pane fade" id="a-07">
+				<h2 class="text-center mt-3">Réserver un document</h2>
+				<p>La fonction <strong>Réserver</strong> vous permet de vérouiller un document pour empêcher d'autres personnes de le modifier.</p>
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+				
+						<h3>Pour réserver un élément</h3>
+						<ol>
+							<li>À droite du nom du document,cliquez sur l’icône <strong>Fonctions</strong></li>
+							<li>Sélectionnez <strong>Réserver</strong>. Cliquez sur le bouton <strong>Envoyer</strong> pour réserver le document (un crochet rouge apparaît sur l'élément réservé).</li>
+							<li>Cliquez sur le bouton <strong>Envoyer</strong> pour réserver le document (un crochet rouge apparaît sur l'élément réservé).</li>
+						</ol>
+
+						<p><em>REMARQUES : Un document est aussi réservé automatiquement lorsqu'on l'ouvre en modification à partir de GCdocs.</em></p>
+						<p><em>Si vous souhaitez travailler sur le document de l'extérieur du bureau, cliquez sur le lien Télécharger dans le champ Option. (L'option de télécharger existe. Les utilisateurs devront ajouter manuellement une version plus tard.)</em></p>
+					
+					</div>
+					<div class="col-md-8">
+
+				
+				<div class="card">
+					  <div class="card-heading" id="headingReserving">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseReserving" aria-expanded="false" aria-controls="collapseReserving">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseReserving" class="collapse" aria-labelledby="headingReserving">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="W-wVN1xJRbg"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+			</div>
+			
+			
+			<!--Section - Favorites-->       
+			<div class="tab-pane fade" id="a-08">
+				<h2 class="text-center mt-3">Favoris</h2>
+				<p>Il s'agit d'une caractéristique de GCdocs qui permet de choisir les dossiers que vous utilisez le plus souvent dans la structure de dossiers de votre direction, et de les afficher dans une simple liste sans avoir à parcourir chaque fois toute la structure. Vous pouvez également mettre un seul fichier dans les favoris.</p>
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Pour établir vos favoris</h3>
+						<ol>
+							<li>Cliquez sur le menu <strong>Personnel</strong> en haut de la page.</li>
+							<li>Dans le menu déroulant, cliquez sur <strong>Favoris</strong> pour accéder à la page <strong>Mes favoris</strong>.</li>
+							<li>Ensuite, cliquez sur <strong>Ajouter un favori</strong> dans le coin supérieur droit.</li>
+							<li>Une fenêtre contextuelle s'affichera avec la structure de dossier.</li>
+							<li>Si vous souhaitez sélectionner l'un des fichiers énumérés dans les favoris, cliquez sur <strong>Sélectionner ></strong>.</li>
+							<li>Si vous souhaitez parcourir un sous-dossier, cliquez sur le nom du dossier, et continuez ainsi jusqu'à ce que vous trouviez le dossier voulu, puis cliquez sur <strong>Sélectionner ></strong>.</li>
+							<li>Répétez au besoin pour ajouter autant de dossiers que vous voulez.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">
+
+				<div class="card">
+					  <div class="card-heading" id="headingFavorites">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseFavorites" aria-expanded="false" aria-controls="collapseFavorites">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseFavorites" class="collapse" aria-labelledby="headingFavorites">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="dj1Xoc4aEZo"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Pour ajouter un onglet de favoris</h3>
+						<ol>
+							<li>Cliquez sur le menu <strong>Personnel</strong> en haut de la page.</li>
+							<li>Dans le menu déroulant, cliquez sur Favoris pour accéder à la page <strong>Mes favoris</strong>.</li>
+							<li>Ensuite, cliquez sur <strong>Configurer les onglets</strong> dans le coin supérieur droit.</li>
+							<li>Cliquez sur <strong>Ajouter des onglets</strong> dans le coin supérieur droit.</li>
+							<li>Nommez votre nouvel onglet et cliquez sur <strong>Envoyer</strong>.</li>
+							<li>Vous venez d'ajouter un nouvel onglet Favoris.</li>
+							<li>Répétez au besoin pour créer d'autres onglets.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">
+
+				<div class="card">
+					  <div class="card-heading" id="headingFavorites02">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseFavorites02" aria-expanded="false" aria-controls="collapseFavorites02">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseFavorites02" class="collapse" aria-labelledby="headingFavorites02">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="OGffCpB7bsM"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+
+						<h3>Pour organiser vos favoris</h3>
+						<ol>
+							<li>Une fois que vous êtes dans  Mes Favoris, cliquez sur <strong>Modifier / Organiser</strong>.</li>
+							<li>Des menus déroulants apparaîtront à droite de chaque dossier et vous pourrez choisir sous quel onglet afficher votre dossier  de Favoris.</li>
+							<li>Après avoir sélectionné un emplacement pour chaque dossier, cliquez sur <strong>Envoyer</strong>.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">
+
+				<div class="card">
+					  <div class="card-heading" id="headingFavorites03">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseFavorites03" aria-expanded="false" aria-controls="collapseFavorites03">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseFavorites03" class="collapse" aria-labelledby="headingFavorites03">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="y_Mrq6T63Xw"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+				
+						<h3>Pour supprimer des favoris</h3>
+						<ol>
+							<li>Une fois dans Mes Favoris, cliquez sur <strong>Modifier / Organiser</strong>.</li>
+							<li>À la droite de chaque dossier, vous verrez une case à cocher intitulée <strong>Enlever</strong>.</li>
+							<li>Cochez la case vis-à-vis du ou des dossiers que vous souhaitez supprimer des favoris.</li>
+							<li>Cliquez sur <strong>Envoyer</strong>.</li>
+							<li>Vous avez donc supprimé un favori.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">
+
+				<div class="card">
+					  <div class="card-heading" id="headingFavorites04">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseFavorites04" aria-expanded="false" aria-controls="collapseFavorites04">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseFavorites04" class="collapse" aria-labelledby="headingFavorites04">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="JNirfaH_578"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+					
+					
+					</div>
+				</div>		
+				<hr class="pt-1" />
+
+			</div>
+			
+			
+			<!--Section - My Profile-->       
+			<div class="tab-pane fade" id="a-09">
+				<h2 class="text-center mt-3">Mon profil</h2>
+				<p>Caractéristiques de votre profil GCdocs:</p>
+				<ul>
+					<li>Vous pouvez visionner vos coordonnées et celles des autres utilisateurs</li>
+					<li>Vous pouvez mettre à jour votre profil et parler de vous-même aux autres</li>
+					<li>Vous pouvez télécharger une photo</li>
+				</ul>
+				  
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">  
+
+						<h3>Pour mettre à jour votre profil</h3>
+						<ol>
+							<li>Cliquez sur le menu <strong>Personnel</strong> en haut de votre écran. Un menu déroulant apparaîtra.</li>
+							<li>Cliquez sur <strong>Mon profil</strong> pour accéder à la page générale de votre profil où vous verrez vos propres coordonnées.</li>
+							<li>Cliquez sur l'onglet <strong>Étendu</strong> en haut de votre écran.</li>
+							<li>Sous cet onglet, vous pouvez inscrire une biographie, une description de poste, des postes précédemment occupés et remplir les champs que vous êtes à l'aise de partager sur GCdocs.</li>
+							<li>Dans <strong>Profils externes</strong>, vous pouvez lier vos autres comptes, comme Facebook, Linkedln et Twitter.</li>
+							<li>Cliquez sur <strong>Mettre à jour</strong> au bas de l'écran pour enregistrer les modifications.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">
+
+				<div class="card">
+					  <div class="card-heading" id="headingMyProfile">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseMyProfile" aria-expanded="false" aria-controls="collapseMyProfile">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseMyProfile" class="collapse" aria-labelledby="headingMyProfile">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="q2ZFi0A5T6E"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">  
+
+						<h3>Pour ajouter / mettre à jour votre photo dans votre profil GCdocs</h3>
+						<ol>
+							<li>Cliquez sur le menu <strong>Personnel</strong> en haut de votre écran. Un menu déroulant apparaîtra.</li>
+							<li>Cliquez sur <strong>Mon profil</strong> pour accéder à la page principale de Mon profil.</li>
+							<li>Cliquez sur l'onglet <strong>Personnel</strong>.</li> 
+							<li>Cliquez sur <strong>Parcourir Content Server</strong>, trouvez la photo que vous voulez utiliser et cliquez sur  Sélectionner. (La photo doit déjà être enregistrée dans GCdocs)</li>
+							<li>Cliquez sur <strong>Mettre à jour</strong>. Votre profil sera actualisé avec votre nouvelle photo.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">
+
+				<div class="card">
+					  <div class="card-heading" id="headingMyProfile02">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseMyProfile02" aria-expanded="false" aria-controls="collapseMyProfile02">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseMyProfile02" class="collapse" aria-labelledby="headingMyProfile02">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="ZbSofKaJzpc"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+			</div>
+			
+			<!--Section - XReference-->       
+			<div class="tab-pane fade" id="a-10">
+				<h2 class="text-center mt-3">Renvoi (Xreference)</h2>
+				<p>Un <strong>Renvoi</strong> relie deux (ou plusieurs) documents GCdocs. (Exemple : Une présentation dans différentes langues.)</p>
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">  
+
+						<h3>Pour créer un renvoi</h3>
+						<ol>
+							<li>Cliquez sur l'icône <strong>Fonctions</strong> pour un élément géré, sélectionnez <strong>Propriétés</strong>, puis <strong>Renvoi</strong>.</li>
+							<li>Sous l'onglet <strong>Renvoi</strong> de la page Propriétés de l'élément, cliquez sur <strong>Nouveau renvoi</strong> dans la liste déroulante <strong>Ajouter : Renvoi</strong>.</li>
+							<li>Cliquez sur le bouton <strong>Parcourir Content Server</strong>, recherchez l'élément souhaité comme renvoi, puis cliquez sur le lien <strong>Sélectionner</strong> pour sélectionner l'élément.</li>
+							<li>Sur la page Attribuer le renvoi, cliquez sur un type de renvoi dans la liste déroulante <strong>Type de renvoi</strong>.</li>
+							<li>Cliquez sur le bouton <strong>Attribuer</strong>.</li>
+						</ol>
+
+					</div>
+					<div class="col-md-8">
+				  
+				<div class="card">
+					  <div class="card-heading" id="headingXReference">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseXReference" aria-expanded="false" aria-controls="collapseXReference">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseXReference" class="collapse" aria-labelledby="headingXReference">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="cmGi2WDWlXA"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+
+			</div>
+			
+			<!--Section - Notifications-->       
+			<div class="tab-pane fade" id="a-11">
+				<h2 class="text-center mt-3">Avis</h2>
+				
+				<p>GCdocs vous enverra une notification dans les cas suivants</p>
+								<ul><li>Une nouvelle version d'un document auquel vous avez contribué est ajoutée;</li></ul>
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">  
+
+						<h3>Pour ajouter une notification</h3>
+						<ol>
+							<li>Cliquez sur l’icône <strong>Fonctions</strong> à droite de l’élément visé afin de chercher un fichier ou un dossier pour lequel vous souhaitez recevoir des notifications.</li>
+							<li>Choisissez <strong>Définir une notification</strong> et sélectionnez le type de notification que vous souhaitez.</li>
+							<li>Cliquez sur <strong>Envoyer</strong>.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">
+
+				<div class="card">
+					  <div class="card-heading" id="headingNotifications">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseNotifications" aria-expanded="false" aria-controls="collapseNotifications">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseNotifications" class="collapse" aria-labelledby="headingNotifications">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="DANL_eLk8Fc"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">  
+
+						<h3>Pour modifier vos centres d’intérêts en matière de notifications</h3>
+						<ol>
+							<li>Cliquez sur le menu <strong>Personnel</strong> en haut de l'écran.</li>
+							<li>Dans le menu déroulant, cliquez sur <strong>Notification</strong>.</li>
+							<li>À la droite de l’écran, cliquez sur <strong>Modifier les centres d’intérêt</strong>.</li>
+							<li>Utilisez le menu déroulant pour ajouter des événements à votre liste de notifications. Choisissez des paramètres de rapport différents si vous souhaitez être averti de divers événements ayant lieu à divers moments.</li>
+							<li>Cliquez sur <strong>Envoyer</strong>.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">	
+
+				<div class="card">
+					  <div class="card-heading" id="headingNotifications02">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseNotifications02" aria-expanded="false" aria-controls="collapseNotifications02">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseNotifications02" class="collapse" aria-labelledby="headingNotifications02">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="3ZgU-_CEEFE"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+					
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">  
+
+						<h3>Pour modifier les paramètres en matière de notifications</h3>
+						<ol>
+							<li>Cliquez sur <strong>Personel</strong> en haut de l'écran.</li>
+							<li>Dans le menu déroulant, cliquez sur <strong>Notification</strong>.</li>
+							<li>À la gauche de l’écran, cliquez sur <strong>Modifier les centres d’intérêt</strong>.</li>
+							<li>Utilisez le menu déroulant pour ajouter des événements à votre liste d'avis. Choisissez différents numéros de rapports si vous souhaitez recevoir des avis pour différents rapports à différents moments.</li>
+							<li>Cliquez sur <strong>Envoyer</strong>.</li>
+							<li>Cliquez sur <strong>Modifier les paramètres</strong>.</li>
+							<li>Une nouvelle page apparaîtra avec vos paramètres actuels.</li>
+							<li>Si vous souhaitez recevoir des notifications par courriel, assurez-vous que la case <strong>Activer l’envoi par e-mail de ce rapport</strong> est cochée et que votre adresse électronique apparaît dans le champ approprié.</li>
+							<li>Sélectionnez les journées de réception des notifications. (Remarque : il est recommandé de choisir les jours de travail.)</li>
+							<li>Sélectionnez les heures et la fréquence de réception des notifications.</li>
+							<li>Cliquez sur <strong>Envoyer</strong>.</li>
+						</ol>
+				  
+					</div>
+					<div class="col-md-8">	
+
+				<div class="card">
+					  <div class="card-heading" id="headingNotifications03">
+						
+						  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseNotifications03" aria-expanded="false" aria-controls="collapseNotifications03">
+							<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+						  </a>
+						
+					  </div>
+					  <div id="collapseNotifications03" class="collapse" aria-labelledby="headingNotifications03">
+						<div class="card-body">
+						  <div class="embed-responsive embed-responsive-16by9">
+							<div class="youtube-player" data-id="cheCKPb728U"></div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				
+					</div>
+				</div>		
+				<hr class="pt-1" />
+			</div> 
+
+			<!--Section - Password -->
+            <div class="tab-pane fade" id="a-12">
+				<h2 class="text-center mt-3">Mot de passe</h2>
+				
+				<div class="row">					
+					<div class="col-md-4 border-right border-dark">
+						<h3>Réinitialiser le mot de passe GCdocs</h3>
+						<ol>
+							<li>Cliquez sur le lien <strong>Réinitialisation du mot de passe</strong> dans votre courriel OU</li>
+							<li>Cliquez sur <strong>Réinitialisation du mot de passe</strong> sur la page d’accueil de GCdocs</li>
+							<li>Entrez votre nom d’utilisateur GCdocs (NOTE : respectez la casse)</li>
+							<li>Cliquez sur <strong>Soumettre</strong></li>
+							<li>Cela vous mènera à la page de <strong>Réinitialisation du mot de passe</strong></li>
+							<li>Entrez un <strong>Nouveau mot de passe</strong> dans l’espace prévu et dans le champ <strong>Confirmer le nouveau mot de passe</strong></li>
+							<li>Entrez le <strong>Code de sécurité</strong> que vous avez reçu par courriel</li>
+							<li>Cliquez sur <strong>Soumettre</strong></li>
+						</ol>
+					</div>
+							
+					<div class="col-md-8">
+						<div class="card">
+						  <div class="card-heading" id="headingLanguage2">
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseLanguage02" aria-expanded="false" aria-controls="collapseLanguage02">
+								<button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-youtube"></i> Visionner la vidéo</button>
+							  </a>
+						  </div>
+						  <div id="collapseLanguage02" class="collapse" aria-labelledby="headingLanguage02">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<div class="youtube-player" data-id="YU7CpwSBB48"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<hr class="pt-1" />
+			
+				
+				<div class="row mt-3">					
+					<div class="col-md-4 border-right border-dark">
+						<h3>Modifier le mot de passe GCdocs</h3>
+						<ol>
+							<li>Dans la barre de menu, cliquez sur <strong>Outils</strong></li>
+							<li>Dans le menu déroulant, choisissez <strong>Paramètres</strong></li>
+							<li>Cela vous mènera à l’onglet <strong>Général</strong> de <strong>Mes paramètres</strong></li>
+							<li>Cliquez sur l’onglet <strong>Mot de passe</strong></li>
+							<li>Entrez votre <strong>Mot de passe actuel</strong></li>
+							<li>Entrez un <strong>Nouveau mot de passe</strong> dans l’espace prévu et dans le champ <strong>Confirmation</strong></li>
+							<li>Cliquez sur <strong>Mettre à jour</strong></li>
+						</ol>
+					</div>
+					<div class="col-md-8">
+						<div class="card">
+						  <div class="card-heading" id="headingLanguage">
+							  <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseLanguage" aria-expanded="false" aria-controls="collapseLanguage">
+								<button type="button" class="btn btn-warning btn-lg btn-block"><i class="fas fa-exclamation-triangle"></i> à venir</button>
+							  </a>
+						  </div>
+						  <div id="collapseLanguage" class="collapse" aria-labelledby="headingLanguage">
+							<div class="card-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<i class="fas fa-exclamation-triangle"></i>
+								<!--<div class="youtube-player" data-id="vRyrLSkTjP4"></div>-->
+							  </div>
+							</div>
+						  </div>
+						</div>				
+					</div>
+				</div>
+				<hr class="pt-1" />			  
+			</div>				
+          </div>
+        </div>
+      </div>
+	</div>	
+</div>
+
+</html>
+{{DFO-IM-gcplus-footer-main}}
+{{DFO-IM-gcplus css}}
+{{DFO-IM-gcplus-css-override}}

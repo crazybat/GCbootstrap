@@ -1,0 +1,381 @@
+[[en:Information_management_at_Fisheries_and_Oceans_Canada_(DFO)/Information_management_initiatives/GCDocs]]
+__NOTOC__
+{{DFO-IM-gcplus-head-main}}
+{{DFO-IM-gcplus-nav-main-fra}}
+<html>
+<script>
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1&rel=0&modestbranding=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+</script>
+<div role="main" class="container-fluid">
+	<nav aria-label="breadcrumb" class="mb-2">
+	  <ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="http://www.gcpedia.gc.ca/wiki/Gestion_de_l%27information_de_P%C3%AAches_et_Oc%C3%A9ans_Canada">Gestion de l'information</a></li>
+		<li class="breadcrumb-item"><a href="http://www.gcpedia.gc.ca/wiki/Gestion_d%27information_de_P%C3%AAches_et_Oc%C3%A9ans_Canada_(MPO)/Initiatives_de_gestion_de_l%27information">Initiatives</a></li>
+		<li class="breadcrumb-item active" aria-current="page"><span class="text-uppercase text-dark font-weight-bold">GC</span><span class="text-success">docs</span></li>
+	  </ol>
+	</nav>
+
+	<div class="row">
+	  <div class="col-10 offset-1">
+		  <div class="alert alert-dismissible alert-danger fade show text-center">
+			<button type="button" class="close" data-dismiss="alert">×</button>
+			<!--<p class="mb-0">Installez Microsoft Office 2016. <a href="https://gcdocs.gc.ca/dfo-mpo/llisapi.dll?func=ll&objaction=overview&objid=837643" class="alert-link" target="_blank">Assurez-vous de réinstaller le logiciel d’Entreprise Connect</a>.</p>-->
+			
+			<button type="button" class="close" data-dismiss="alert">×</button>
+			<!--<p class="mb-0">Installed Office 2016? Make sure to <a href="https://gcdocs.gc.ca/dfo-mpo/llisapi.dll/Overview/798971" class="alert-link" target="_blank">reinstall Enterprise Connect</a>.</p>-->
+			<h4 class="alert-heading"><i class="fas fa-hourglass-half mr-1 text-danger"></i> Expiration du mot de passe?</h4>
+			<p class="mb-3">Regardez la vidéo sur la façon de réinitialiser votre mot de passe.</p>
+			<button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fab fa-youtube"></i> Visionner la vidéo</button>			
+		  </div>
+	  </div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Réinitialisation du mot de passe</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="embed-responsive embed-responsive-16by9">
+				<div class="youtube-player" data-id="YU7CpwSBB48"></div>
+			</div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-8 mb-3">
+			<div class="media">
+				<img class="align-self-start mr-1" src="http://www.gcpedia.gc.ca/gcwiki/images/f/fa/Gcdocs-icon-3535.png" />
+				<div class="media-body">
+					<h3><span class="text-uppercase font-weight-bold">GC</span><span class="text-success">docs</span></h3>
+				</div>
+			</div>
+			<div class="lead">
+				<p><img src="http://www.gcpedia.gc.ca/gcwiki/images/7/77/Logo-graphic.png" width="175" alt="" class="img-thumbnail img-fluid float-left mr-2">
+					GCdocs est le système de gestion électronique des documents et des dossiers (SGEDD) officiel du gouvernement du Canada (GC) ainsi que l’outil utilisé par les organisations pour créer, recueillir et préserver l’information jusqu’à et incluant la cote “Protégé B”. Les organisations utilisent également GCdocs comme outil de collaboration en partageant, en évaluant, en identifiant et en supprimant facilement de l’information.</p>
+					<p>GCdocs est une initiative de la <a href="http://www.gcpedia.gc.ca/wiki/Gestion_de_l%27information_de_P%C3%AAches_et_Oc%C3%A9ans_Canada" class="font-weight-bold">Gestion de l’information</a>.</p>
+			</div>
+			<hr/>
+			<a href="https://gcdocs.gc.ca/dfo-mpo/" data-toggle="tooltip" data-placement="top" title="Pour tous les employés du MPO et de la Garde côtière canadienne" class="btn btn-success btn-block btn-lg" target="_blank"><i class="fas fa-user-lock"></i> Accès à GCdocs</a>
+			<a href="http://www.gcpedia.gc.ca/wiki/Gestion_d%27information_de_P%C3%AAches_et_Oc%C3%A9ans_Canada_(MPO)/Initiatives_de_gestion_de_l%27information/GCDocs/Guide" data-toggle="tooltip" data-placement="bottom" title="Tutoriels vidéo" class="btn btn-info btn-block btn-lg" target="_blank"><i class="fas fa-hands-helping"></i> Le guide d’assistance GCDocs</a>
+			
+			
+		</div>
+		<div class="col-md-4">
+			<div class="card card-accent-success shadow">
+				<div class="card-header">
+					<!--<img src="http://www.gcpedia.gc.ca/gcwiki/images/d/d7/Promotion-icon.png" class="float-right">-->
+					<h5><i class="fas fa-bullhorn mr-1 text-dark"></i> Caractéristique</h5></div>
+				<div class="card-body">
+					<p class="card-text">
+						Vous n’avez pas reçu ou vous avez perdu votre lettre de bienvenue? Vous n’avez pas de compte d’utilisateur? <a href="http://assystselfservice.ent.dfo-mpo.ca/assystnet/application/assystNET.jsp#type=13;id=8;name=Self-Service%3A%20log%20a%20service%20request" class="badge badge-danger text-white" target="_blank">Envoyez un billet <i class="fas fa-external-link-alt"></i></a> au centre d’assistance des technologies de l’information pour obtenir un code d’utilisateur ou une nouvelle copie de votre lettre de bienvenue. Sélectionnez <strong>GCdocs</strong>, puis choisissez le « <strong>type de demande</strong> » applicable.
+					</p>
+				</div>
+				<div class="card-footer text-muted">
+					Date de modification 2018-10-15 
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div class="card-deck mt-5">
+				
+		<div class="card card-accent-danger mb-3 shadow">
+			
+            <div class="card-header"><h5><i class="fas fa-briefcase mr-1 text-danger"></i> Espace de travail personnel</h5></div>
+            <div class="card-body">
+              
+			  <img src="http://www.gcpedia.gc.ca/gcwiki/images/5/55/Archive.png" class="float-right ml-2">
+			  <p class="card-text">GCdocs permet de faire migrer vos documents <strong>personnels et professionnels</strong>, et vos courriels dans votre <strong>Espace de travail personnel</strong>. Une fois votre contenu transféré dans GCdocs, vous y aurez toujours accès au besoin. Ces tutoriels et présentations vidéo vous démontreront différentes méthodes pour sauvegarder vos documents. </p>
+			  <ul>
+				<li><a href="https://gcdocs.gc.ca/dfo-mpo/llisapi.dll/Open/841336">Règles administratives et pratiques exemplaires pour GCdocs</a></li>
+			  </ul>
+			  
+              
+            </div>
+			<div class="card-footer">
+				<a href="http://www.gcpedia.gc.ca/wiki/Gestion_d%27information_de_P%C3%AAches_et_Oc%C3%A9ans_Canada_(MPO)/Initiatives_de_gestion_de_l%27information/GCDocs/Espaces_de_travail" class="btn btn-danger btn-block">Pour en savoir plus : Espaces de travail</a>
+			</div>
+          </div>
+	
+		<div class="card card-accent-danger mb-3 shadow">
+			
+            <div class="card-header"><h5><i class="fas fa-question mr-1 text-danger"></i> Foire aux questions</h5></div>
+            <div class="card-body">
+              
+			  <img src="http://www.gcpedia.gc.ca/gcwiki/images/a/a7/Messages-icon.png" class="float-right ml-2">
+			  <p class="card-text">Vous cherchez des renseignements généraux, des conseils sur la migration, de l’information sur la façon de gérer vos courriels ou autre? Il se peut qu’il y ait déjà une réponse à votre question.</p>
+			  
+              
+            </div>
+			<div class="card-footer">
+				<a href="http://www.gcpedia.gc.ca/wiki/Gestion_d%27information_de_P%C3%AAches_et_Oc%C3%A9ans_Canada_(MPO)/Initiatives_de_gestion_de_l%27information/GCDocs/faq" class="btn btn-danger btn-block">Pour en savoir plus : <abbr title="Foire aux questions">FAQ</abbr></a>
+			</div>
+        </div>
+		
+		<div class="card card-accent-danger mb-3 shadow">
+			
+            <div class="card-header"><h5><i class="fas fa-book mr-1 text-danger"></i> Formation</h5></div>
+            <div class="card-body">
+              
+			  <img src="http://www.gcpedia.gc.ca/gcwiki/images/6/64/Open-book.png" class="float-right ml-2">
+			  <p class="card-text">GCcampus offre des cours sur GCdocs qui incluent des fiches conseils. Pour avoir accès à ces cours, accédez à GCcampus, connectez-vous (ou créez un identifiant - c'est gratuit) et tapez GCdocs dans le champ Recherche.</p>
+			  <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Consultez les liens directs vers les cours</a>
+			  <ul class="collapse mt-2" id="collapseExample">
+				<li><a href="https://learn-apprendre.csps-efpc.gc.ca/application/fr/content/cours-de-base-sur-gcdocs-en-ligne-rythme-libre-i010-0" target="_blank">Cours de base sur GCDOCS : en ligne, à rythme libre (I010)</a></li>
+				<li><a href="https://learn-apprendre.csps-efpc.gc.ca/application/fr/content/protection-de-linformation-de-nature-delicate-dans-gcdocs-i016" target="_blank">Protection de l'information de nature délicate dans GCdocs (I016)</a></li>
+				<li><a href="https://learn-apprendre.csps-efpc.gc.ca/application/fr/content/test-sur-les-connaissances-en-gestion-de-linformation-i300" target="_blank">Test sur les connaissances en gestion de l’information (I300)</a></li>
+				<li><a href="https://learn-apprendre.csps-efpc.gc.ca/application/fr/content/principes-fondamentaux-de-la-gestion-de-linformation-i301" target="_blank">Principes fondamentaux de la gestion de l’information (I301)</a></li>
+			  </ul>
+            </div>
+			<div class="card-footer"> 
+				<a href="https://learn-apprendre.csps-efpc.gc.ca/application/en" class="btn btn-danger btn-block" target="_blank">Allez à GCcampus <i class="fas fa-external-link-alt"></i></a>
+			</div>
+        </div>	  
+	</div>
+	
+	<div class="card-deck mt-5">
+		<div class="card card-accent-secondary mb-3 shadow">
+			
+            <div class="card-header"><h5><i class="fas fa-tasks mr-1 text-dark"></i> Intégration - Progrès réalisés à ce jour</h5></div>
+            <div class="card-body">
+              
+			  <img src="http://www.gcpedia.gc.ca/gcwiki/images/a/a3/Bars-chart.png" alt="Card image cap" class="float-right">
+			  <ul>
+				<li><a href="https://gcdocs.gc.ca/dfo-mpo/llisapi.dll/Overview/777447" target="_blank">Projet GCdocs – Tableau de bord sommaire – Intégration des directions</a></li>
+			  </ul>              
+            </div>
+			<div class="card-footer text-muted">
+				Date de modification 2018-09-26 
+			</div>
+          </div>
+	
+		<div class="card card-accent-secondary mb-3 shadow">
+			
+            <div class="card-header"><h5><i class="fas fa-desktop mr-1 text-dark"></i> Présentations</h5></div>
+            <div class="card-body">
+              
+			  <img src="http://www.gcpedia.gc.ca/gcwiki/images/7/70/Presentation-icon.png" alt="Card image cap" class="float-right">
+			  <ul>
+				<li><a href="https://gcdocs.gc.ca/dfo-mpo/llisapi.dll?func=ll&objaction=overview&objid=1611349" target="_blank">GCdocs - Pourquoi i'utiliser?</a></li>
+				<li><a href="/gcwiki/images/f/fb/MECTS-3710008-v4-Presentation_-_Regional_Visits_-_Information_Management_Intro.pdf" title="MECTS-3710008-v4-Presentation - Regional Visits - Information Management Intro.pdf">Présentation - Visites régionaux - La gestion de l'information</a></li>
+				<li><a href="/gcwiki/images/b/b3/GCdocs_Presentation.ppt" title="GCdocs Presentation.ppt">Présentation - GCdocs</a></li>
+			  </ul>
+			  
+              
+            </div>
+			<div class="card-footer text-muted">
+				Date de modification 2018-10-15 
+			</div>
+        </div>
+	</div>
+
+	<div class="row mt-5">
+		<div class="col-md-12">
+			<h3><i class="fas fa-users mr-1 text-dark"></i> Contactez-nous</h3>
+		</div>
+		<div class="col-md-6">
+			<h4>Équipe de mise en oeuvre de GCDocs</h4>
+			<table class="table table-bordered table-hover">
+				<thead class="thead-dark">
+				<tr>
+					<th scope="col">Rôle</th>
+					<th scope="col">Nom</th>
+				</tr>
+				<thead>
+				<tbody>
+				<tr>
+					<td>Chef de projet de GCdocs</td>
+					<td><a href="mailto:Darrel.S.Comeau@dfo-mpo.gc.ca">Darrell Comeau</a></td>
+				</tr>
+				<tr>
+					<td>Chef, Planification et les stratégies de GI</td>
+					<td><a href="mailto:Ron.Sabourin@dfo-mpo.gc.ca">Ron Sabourin</a></td>
+				</tr>
+				<tr>
+					<td>Analyste de la planification de la GI, Mise-en-oeuvre GCdocs</td>
+					<td><a href="mailto:Shannon.Olson@dfo-mpo.gc.ca">Shannon Olson</a></td>
+				</tr>
+				<!--<tr>
+					<td>Projet de mise en œuvre de GCdocs</td>
+					<td><a href="mailto:Liliane.Mercier@dfo-mpo.gc.ca">Liliane Mercier</a></td>
+				</tr>-->
+				<tr>
+					<td>Soutien, Administration de GCdocs</td>
+					<td><a href="mailto:Carole.Lessard@dfo-mpo.gc.ca">Carole Lessard</a></td>
+				</tr>
+				<tr>
+					<td>Coordonnatreur technique de communications</td>
+					<td><a href="mailto:Marco.Battilana@dfo-mpo.gc.ca">Marco Battilana</a></td>
+				</tr>
+				<tr>
+					<td>Équipe de mise en oeuvre de GCDocs</td>
+					<td><a href="mailto:Paul.Hoffman@dfo-mpo.gc.ca">Paul Hoffman</a></td>
+				</tr>
+			</tbody>
+			</table>
+
+		</div>
+		
+		<div class="col-md-6">
+			<h4>Coordonnateurs</h4>
+			
+			<table class="table table-bordered table-hover table-sm">
+				<thead class="thead-dark">
+				<tr>
+					<th scope="col">Unité d’affaires</th>
+					<th scope="col">GCdocs Coordonnateurs</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th colspan="2">Secteurs - <abbr title="Pêches et Océans Canada">MPO</abbr></th>
+				</tr>
+				<tr>
+					<td>Dirigeant principal de la vérification</td>
+					<td><a href="mailto:Nicole.Primeau@dfo-mpo.gc.ca">Nicole Primeau</a></td>
+				</tr>
+				<tr>
+					<td>Secteur des écosystèmes aquatiques</td>
+					<td><a href="mailto:Nicole.Gosse-Kavanagh@dfo-mpo.gc.ca">Nicole Gosse-Kavanagh</a></td>
+				</tr>
+				<tr>
+					<td>Communications</td>
+					<td><a href="mailto:Anja.Boskovic@dfo-mpo.gc.ca">Anja Boskovic</a></td>
+				</tr>
+				<tr>
+					<td>DFP</td>
+					<td><a href="mailto:Michael.Paquet@dfo-mpo.gc.ca">Michael Paquet</a><br><a href="mailto:Leigh.Wallace@dfo-mpo.gc.ca">Leigh Wallace</a><br><a href="mailto:Chantal.Charest@dfo-mpo.gc.ca">Chantal Charest</a></td>
+				</tr>
+				<tr>
+					<td>Secteur des sciences des écosystèmes et des océans</td>
+					<td><a href="mailto:Wayne.Moore@dfo-mpo.gc.ca">Wayne Moore</a></td>
+				</tr>
+				<tr>
+					<td>Secteur de la gestion des pêches et ports</td>
+					<td><a href="mailto:Nicole.Gosse-Kavanagh@dfo-mpo.gc.ca">Nicole Gosse-Kavanagh</a></td>
+				</tr>
+				<tr>
+					<td>Secteur des ressources humaines et services intégrés</td>
+					<td><a href="mailto:Sonia.Walker@dfo-mpo.gc.ca">Sonia Walker</a></td>
+				</tr>
+				<tr>
+					<td>Gestion de l'information / Services de la technologie</td>
+					<td><a href="mailto:Jennifer.Cote-Deschamps@dfo-mpo.gc.ca">Jennifer Côté-Deschamps</a></td>
+				</tr>
+				<tr>
+					<td>Services juridiques</td>
+					<td><a href="mailto:Julie.Edwards@dfo-mpo.gc.ca">Julie Edwards</a></td>
+				</tr>
+				<tr>
+					<td>BIPS</td>
+					<td><a href="mailto:Jeff.Scullion@dfo-mpo.gc.ca">Jeff Scullion</a></td>
+				</tr>
+				<tr>
+					<td>Politiques stratégiques</td>
+					<td><a href="mailto:Ruwan.DeSilva@dfo-mpo.gc.ca">Ruwan De Silva</a><br><a href="mailto:Jonathan.Macdonald@dfo-mpo.gc.ca">Jonathan MacDonald</a></td>
+				</tr>
+				<tr>
+					<td>PPO</td>
+					<td><a href="mailto:Jennifer.Barry@dfo-mpo.gc.ca">Jennifer Barry</a></td>
+				</tr>
+				<tr>
+					<td>FPA</td>
+					<td><a href="mailto:Sylvie.Tremblay@dfo-mpo.gc.ca">Sylvie Tremblay</a></td>
+				</tr>
+				<tr>
+					<th colspan="2">Région - <abbr title="Pêches et Océans Canada">MPO</abbr></th>
+				</tr>
+				<tr>
+					<td>Région du Centre et de l'Arctique</td>
+					<td><a href="mailto:Christine.O'Brien@dfo-mpo.gc.ca">Christine O’Brien</a></td>
+				</tr>
+				<tr>
+					<td>Région du Golfe</td>
+					<td><a href="mailto:Lynn.Bourque@dfo-mpo.gc.ca">Lynn Bourque</a></td>
+				</tr>
+				<tr>
+					<td>Co-directrice générale régionale intérimaire - Maritimes</td>
+					<td><a href="mailto:Trish.Hopkins@dfo-mpo.gc.ca">Trish Hopkins</a></td>
+				</tr>
+				<tr>
+					<td>Région de Terre-Neuve </td>
+					<td><a href="mailto:Jennifer.Fitzpatrick@dfo-mpo.gc.ca">Jennifer Fitzpatrick</a></td>
+				</tr>
+				<tr>
+					<td>Région Pacifique</td>
+					<td><a href="mailto:Bonnie.Antcliffe@dfo-mpo.gc.ca">Bonnie Antcliffe</a></td>
+				</tr>
+				<tr>
+					<td>Région du Québec</td>
+					<td><a href="mailto:Josee.Robitaille@dfo-mpo.gc.ca">Josée Robitaille</a></td>
+				</tr>
+				<tr>
+					<th colspan="2">Garde côtière canadienne</th>
+				</tr>
+				<tr>
+					<td>Garde côtière canadienne</td>
+					<td><a href="mailto:Laurier.Guimond@dfo-mpo.gc.ca">Laurier Guimond</a></td>
+				</tr>
+				<tr>
+					<td>Atlantique</td>
+					<td><a href="mailto:Jana.Genge@dfo-mpo.gc.ca">Jana Genge</a></td>
+				</tr>
+				<tr>
+					<td>Centre et Arctique</td>
+					<td><a href="mailto:Marie-Josee.Alary@dfo-mpo.gc.ca">Marie-Josée Alary</a><br><a href="mailto:Krista.Benn@dfo-mpo.gc.ca">Krista Benn</a></td>
+				</tr>
+				<tr>
+					<td>Ouest</td>
+					<td><a href="mailto:Christine.Passalacqua@dfo-mpo.gc.ca">Christine Passalacqua</a></td>
+				</tr>
+				</tbody>
+			</table>			
+		</div>
+	</div>
+</div>
+</html>
+{{DFO-IM-gcplus-footer-main-fra}}
+{{DFO-IM-gcplus css}}
+{{DFO-IM-gcplus-css-override}}
